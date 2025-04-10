@@ -179,6 +179,7 @@ yolo11n_ncnn_model
 yolo8n_ncnn_model
 
 runs
+runs_25_local_640p
 runs_100_640p
 
 pothole_videos
