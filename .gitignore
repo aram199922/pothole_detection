@@ -169,3 +169,19 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Ignoring data folders
+data
+yolo_data
+losses_screenshots
+
+yolo11n_ncnn_model
+yolo8n_ncnn_model
+
+runs
+runs_100_640p
+
+pothole_videos
+pothole_images
+
+test_ncnn_conversion.py
