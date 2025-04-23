@@ -176,13 +176,22 @@ yolo_data
 losses_screenshots
 
 yolo11n_ncnn_model
-yolo8n_ncnn_model
+yolov8n_ncnn_model
 
 runs
 runs_25_local_640p
 runs_100_640p
+runs_300_736p
+runs_250_pretrained_736p
+runs_237_250
+runs_v8_300_736p
+runs_v11_640p
+
+testing_quantization_half
+testing_quantization_int8
 
 pothole_videos
 pothole_images
+calibration_images
 
 test_ncnn_conversion.py

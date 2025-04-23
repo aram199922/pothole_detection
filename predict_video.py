@@ -1,5 +1,4 @@
 import os
-
 from ultralytics import YOLO
 import cv2
 
@@ -7,30 +6,30 @@ import cv2
 VIDEOS_DIR = os.path.join('.', 'pothole_videos')
 print(VIDEOS_DIR)
 video_path = os.path.join(VIDEOS_DIR, 'videoplayback.mp4')
-video_path_out = '{}_out_first_100.mp4'.format(video_path)
+video_path_out = '{}_out_v11_640_ncnn.mp4'.format(video_path)
 
 cap = cv2.VideoCapture(video_path)
 ret, frame = cap.read()
 H, W, _ = frame.shape
 out = cv2.VideoWriter(video_path_out, cv2.VideoWriter_fourcc(*'MP4V'), int(cap.get(cv2.CAP_PROP_FPS)), (W, H))
 
-model_path = os.path.join('.', 'runs_first_100', 'detect', 'train', 'weights', 'last.pt')
+model_path = os.path.join('.', 'runs_v11_640p', 'detect', 'train', 'weights', 'best.pt')
+# model_path = os.path.join('.','testing_quantization', 'best_ncnn_model')
 
-# Load a model
-model = YOLO(model_path)  # load a custom model
+model = YOLO(model_path)  
 
-threshold = 0.1
+threshold = 0.3
 
 while ret:
 
     results = model(frame)[0]
-
     for result in results.boxes.data.tolist():
         x1, y1, x2, y2, score, class_id = result
 
         if score > threshold:
             cv2.rectangle(frame, (int(x1), int(y1)), (int(x2), int(y2)), (0, 255, 0), 4)
-            cv2.putText(frame, results.names[int(class_id)].upper(), (int(x1), int(y1 - 10)),
+            label = f"{results.names[int(class_id)].upper()} {score:.2f}"
+            cv2.putText(frame, label, (int(x1), int(y1 - 10)),
                         cv2.FONT_HERSHEY_SIMPLEX, 1.3, (0, 255, 0), 3, cv2.LINE_AA)
 
     out.write(frame)
