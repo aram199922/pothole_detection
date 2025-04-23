@@ -1,19 +1,15 @@
-# My Cool Project
+# Automated Pothole Detection for Road Monitoring
 
 ## Table of Contents
-- [Installation](#installation)
-- [Usage](#usage)
-- [Results](#results)
-- [How to Use This Project?](#how-to-use-this-project)
+- [Data Preprocessing](#data-preprocessing)
+- [Training and Testing](#training)
+- [Raspberry Pi Deployment][#raspberry-pi]
 
-## Installation
+## Data Preprocessing
 Instructions here...
 
-## Usage
+## Training and Testing
 More info here...
 
-## Results
+## Raspberry Pi Deployment
 Cool stuff...
-
-## How to Use This Project?
-Details here...

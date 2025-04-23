@@ -3,9 +3,9 @@ from ultralytics import YOLO
 import cv2
 
 
-VIDEOS_DIR = os.path.join('.', 'pothole_videos')
-print(VIDEOS_DIR)
-video_path = os.path.join(VIDEOS_DIR, 'videoplayback.mp4')
+videos_dir = os.path.join('.', 'pothole_videos')
+print(videos_dir)
+video_path = os.path.join(videos_dir, 'videoplayback.mp4')
 video_path_out = '{}_out_v11_640_ncnn.mp4'.format(video_path)
 
 cap = cv2.VideoCapture(video_path)
