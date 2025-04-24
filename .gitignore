@@ -171,8 +171,8 @@ cython_debug/
 .pypirc
 
 # Ignoring data folders
-data
-yolo_data
+data_local
+yolo_data_local
 losses_screenshots
 
 yolo11n_ncnn_model

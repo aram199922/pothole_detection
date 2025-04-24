@@ -2,7 +2,6 @@ from ultralytics import YOLO
 import cv2
 import os
 
-# Load your trained YOLOv8 model
 model_path = os.path.join('.', 'runs_300_736p', 'detect', 'train', 'weights', 'best.pt')
 model = YOLO(model_path)
 
