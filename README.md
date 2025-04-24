@@ -13,7 +13,7 @@ As any other well formulated detection problem the project will start from gathe
 
 Read the whole README, where you can find tutorials and all the explanations about the project.
 Start with the YOLO model easy introductory **How It Works** explanation video: <br>
-https://www.youtube.com/watch?v=ag3DLKsl2vk&list=PLJ7aTi3ZNpXBdEvv3VlRk46Ei6cxeT_Il&index=15
+https://www.youtube.com/watch?v=ag3DLKsl2vk&list=PLJ7aTi3ZNpXBdEvv3VlRk46Ei6cxeT_Il&index=15 <br>
 For more Information visit the **official** website: <br>
 https://www.ultralytics.com/yolo
 
@@ -56,6 +56,8 @@ During the project many models have been trained, including YOLO version 8 and Y
 For predicting video or image refer to **predict_image.py** and **predict_video.py**.
 Examples of inferenced images and videos can be found in **pothole_videos** and **pothole_images** folders. (or watch the video in YouTube) <br>
 https://www.youtube.com/watch?v=nSzvAnHtJfE
+
+[![Watch the demo](https://img.youtube.com/vi/nSzvAnHtJfE/0.jpg)](https://www.youtube.com/watch?v=nSzvAnHtJfE)
 
 ...
 
