@@ -190,8 +190,8 @@ runs_v11_640p
 testing_quantization_half
 testing_quantization_int8
 
-pothole_videos
-pothole_images
+pothole_videos_local
+pothole_images_local
 calibration_images
 
 test_ncnn_conversion.py

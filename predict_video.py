@@ -5,18 +5,18 @@ import cv2
 
 videos_dir = os.path.join('.', 'pothole_videos')
 print(videos_dir)
-video_path = os.path.join(videos_dir, 'videoplayback.mp4')
-video_path_out = '{}_out_v11_640_ncnn.mp4'.format(video_path)
+video_path = os.path.join(videos_dir, 'dashcam_video_2_in.mp4')
+video_path_out = os.path.join(videos_dir, 'dashcam_video_2_out.mp4')
 
 cap = cv2.VideoCapture(video_path)
 ret, frame = cap.read()
 H, W, _ = frame.shape
 out = cv2.VideoWriter(video_path_out, cv2.VideoWriter_fourcc(*'MP4V'), int(cap.get(cv2.CAP_PROP_FPS)), (W, H))
 
-model_path = os.path.join('.', 'runs_v11_640p', 'detect', 'train', 'weights', 'best.pt')
-# model_path = os.path.join('.','testing_quantization', 'best_ncnn_model')
+# model_path = os.path.join('.', 'runs_v11_640p', 'detect', 'train', 'weights', 'best.pt')
+model_path = os.path.join('.', 'yolov11_model', 'best.pt')
 
-model = YOLO(model_path)  
+model = YOLO(model_path)
 
 threshold = 0.3
 
