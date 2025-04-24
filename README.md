@@ -1,10 +1,10 @@
 # Automated Pothole Detection for Road Monitoring
 
 ## Table of Contents
-- [Introduction - Aim of The Project](#introduction)
-- [Data Collection and Preprocessing](#data-preprocessing)
-- [Training and Testing](#training)
-- [Raspberry Pi Deployment](#raspberry-pi])
+- [Introduction - Aim of The Project](#introduction---aim-of-the-project)
+- [Data Collection and Preprocessing](#data-collection-and-preprocessing)
+- [Training and Testing](#training-and-testing)
+- [Raspberry Pi Deployment](#raspberry-pi-deployment)
 
 ## Introduction - Aim of The Project
 This project proposes an automated pothole detection system leveraging deep learning-based object detection models: YOLOv8 and YOLOv11, trained on a custom-annotated dataset. To ensure high inferencing speed and portability, the models are optimized for deployment on edge devices: Raspberry Pi 4 and 5. The system is designed for real-time inference from live dashcam video streams, enabling on go detection and localization of road potholes. Detected potholes are geotagged using a GPS module, providing precise location data for maintenance planning. This lightweight, low-latency solution demonstrates the potential of integrating modern computer vision in real life applications.
@@ -55,8 +55,6 @@ During the project many models have been trained, including YOLO version 8 and Y
 
 For predicting video or image refer to **predict_image.py** and **predict_video.py**.
 Examples of inferenced images and videos can be found in **pothole_videos** and **pothole_images** folders. (or watch the video in YouTube) <br>
-https://www.youtube.com/watch?v=nSzvAnHtJfE
-
 [![Watch the demo](https://img.youtube.com/vi/nSzvAnHtJfE/0.jpg)](https://www.youtube.com/watch?v=nSzvAnHtJfE)
 
 ...
