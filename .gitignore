@@ -194,4 +194,13 @@ pothole_videos_local
 pothole_images_local
 calibration_images
 
+# Testing
 test_ncnn_conversion.py
+test_model.py
+take_frames.py
+val
+images_predict
+images_truth
+saved_frames
+
+

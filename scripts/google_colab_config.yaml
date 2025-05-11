@@ -1,0 +1,8 @@
+# Dataset yaml for training in Google Colab
+# Adjust the root dir and names (classes) for your project
+path: '/content/gdrive/My Drive/pothole_detection/yolo_data'
+train: train/images
+val: val/images
+
+names:
+  0: pothole

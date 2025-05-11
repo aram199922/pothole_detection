@@ -1,0 +1,8 @@
+# This dataset yaml is specific to the project and location of files
+# Full paths are given intentionally
+# Change nc and names for your specific project
+train: C:/pothole_detection/yolo_data/train/images
+val: C:/pothole_detection/yolo_data/val/images
+
+nc: 1
+names: ['pothole']
