@@ -1,5 +1,7 @@
 # Automated Pothole Detection for Road Monitoring
 
+[![Watch the demo](https://img.youtube.com/vi/_RKtE7-C0b4/0.jpg)](https://www.youtube.com/watch?v=_RKtE7-C0b4)
+
 ## Table of Contents
 - [Introduction - Aim of The Project](#introduction---aim-of-the-project)
 - [Data Collection and Preprocessing](#data-collection-and-preprocessing)
